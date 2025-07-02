@@ -1,0 +1,94 @@
+
+  
+  
+  
+  .app {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-y: hidden;
+   
+  }
+
+
+  .main-content {
+    height: 92.3vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: var(--side-bar);
+    
+    color: var(--text-white);
+    transition: width 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+   
+    padding: 20px 40px;
+    /* font-family: 'Orbitron', sans-serif; */
+  
+    /* Default width when sidebar is open */
+    width: 1250px;
+    overflow-x: hidden;
+
+}
+
+/* Whole scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: var(--side-bar);
+  border-radius: 10px;
+}
+
+/* Scrollbar Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #6c757dc2; /* grey */
+  border-radius: 10px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-light);
+}
+
+
+/* When sidebar is closed, expand the content */
+ .expanded {
+    width: 1080px !important; /* Or whatever larger size you want */
+    max-width: 1600px;
+  }
+  
+  
+
+  body{
+    background-image: url(/assets/bg-dark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -9999;
+    
+}
+
+
+
+
+
+@media (max-width: 950px) {
+  .main-content{
+    padding: 20px;
+  }
+
+  .app{
+    gap: 5px;
+  }
+}
+
+
+

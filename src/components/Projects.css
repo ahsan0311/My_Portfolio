@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body {
+  font-family: sans-serif;
+
+}
+
+.portfolio-container{
+  padding: 0%;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: var( --text-muted);
+  font-family: "Orbitron", sans-serif;
+}
+
+.portfolio-title h3 {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio {
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin-top: -26px;
+}
+
+.portfolio span {
+  color: var(--text-muted);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.single-card {
+  background: var(--icon);
+  border-radius: 16px;
+  padding: 10px;
+  width: 100%; 
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.icon-circle {
+  width: 100%;
+  height: auto;
+  
+}
+
+.icon-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 12px;
+  display: block;
+ 
+}
+
+.card-title{
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Orbitron";
+}
+
+.tag{
+  font-size: 16px;
+}
+
+.description{
+  font-size: 16.5px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.view-link {
+  margin-top: auto;
+  background-color: #181818;
+  color: var(--white);
+  padding: 10px ;
+ font-size: 22px;
+  text-decoration: none;
+  border-radius: 100%;
+  font-weight: 500;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.684);
+}
+
+.view-link:hover {
+  background-color: var(--primary-color);
+ 
+ 
+  color: var(--dark-bg);
+  box-shadow: none;
+}
+
+
+@media (min-width: 800px) {
+  .cards {
+    flex-direction: row; 
+
+  }
+
+  .single-card {
+    width: 48%; 
+  }
+}
+
+@media (max-width: 850px) {
+  .cards{
+    gap: 12px
+  }
+}
+
+@media (max-width: 750px) {
+  .cards {
+    flex-direction: column; 
+  }
+
+  .single-card {
+    width: 100%; 
+  }
+}

@@ -1,0 +1,40 @@
+.settings-container {
+position: absolute;
+
+bottom: 0;
+left: 2%;
+  z-index: 9999;
+  display: flex;
+ align-items: end;
+  gap: 20px;
+}
+
+.settings-btn {
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.settings-panel {
+  
+  display: flex;
+  align-items: center;
+  gap: 60%;
+  margin-bottom: -2px;
+}
+
+.settings-panel button {
+  color: var(--text-muted);
+  border: none;
+
+
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+}
+
+.settings-panel button:hover {
+  background: #333;
+}
