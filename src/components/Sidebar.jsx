@@ -43,7 +43,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
     <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
       <div className="profile-section">
         <img
-          src="/assets/avatar.jpg"
+          src="/assets/my.jpg"
           alt="Profile"
           className={`profile-img ${isOpen ? '' : 'small'}`}
         />
