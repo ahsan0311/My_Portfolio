@@ -82,7 +82,7 @@ const Contact = () => {
     <FaEnvelope className="contact-icon" />
     <div>
       <p className="card-title">E-mail</p>
-      <p><a href="mailto:ahsankhan03143@email.com" className="card-value">ahsankhan03143@email.com</a></p>
+      <p><a href="mailto:ahsankhan03143@email.com" className="card-value">ahsankhan03143@gmail.com</a></p>
     </div>
   </div>
 
@@ -98,7 +98,7 @@ const Contact = () => {
     <FaFacebook className="contact-icon" />
     <div>
       <p className="card-title">Facebook</p>
-      <p><a href="https://www.facebook.com/ahsan.khan.fb" target="_blank" rel="noopener noreferrer" className="card-value">Ahsan Khan</a></p>
+      <p><a href="https://www.facebook.com/profile.php?id=100014911098250" target="_blank" rel="noopener noreferrer" className="card-value">Ahsan Khan</a></p>
     </div>
   </div>
 </div>
